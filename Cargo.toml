@@ -1,0 +1,4 @@
+[workspace]
+members = ["challenges/c*"]
+resolver = "3"
+
