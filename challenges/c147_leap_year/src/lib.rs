@@ -1,6 +1,17 @@
-// Empty function signature - implement later
-pub fn is_leap_year(year: u32) -> bool {
-
+/// Determines if a given year is a leap year.
+///
+/// A year is a leap year if:
+/// - It is divisible by 4, AND
+/// - Either not divisible by 100 OR divisible by 400
+///
+/// # Examples
+/// ```
+/// # use c147_leap_year::is_leap_year;
+/// assert_eq!(is_leap_year(2024), true);
+/// assert_eq!(is_leap_year(2100), false);
+/// assert_eq!(is_leap_year(2000), true);
+/// ```
+pub const fn is_leap_year(year: u32) -> bool {
     year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)
 }
 
